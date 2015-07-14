@@ -67,11 +67,12 @@ curl -s -X POST '<%= p('test_e2e_errand.elasticsearch_hostport') %>/_refresh' ; 
 
 echo '' ; echo '==> Dumping test data...'
 
-curl -s -d "$QUERY" -X POST '<%= p('test_e2e_errand.elasticsearch_hostport') %>/_search?size=30&pretty' > curl.out
+curl -s -d "$QUERY" -X POST '<%= p('test_e2e_errand.elasticsearch_hostport') %>/_search?size=1024&pretty' > curl.out
 
 echo '' ; echo '==> Validating results...'
 
 if ! grep '"total" : 32' curl.out > /dev/null 2>&1 ; then
+  cat curl.out
   fail 'Failed to capture expected number of messages'
 fi
 
