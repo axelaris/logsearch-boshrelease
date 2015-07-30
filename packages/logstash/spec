@@ -11,3 +11,5 @@ files:
   - logstash/logstash-filter-translate-0.1.9.gem
   # https://rubygems.org/downloads/logstash-input-relp-0.1.5.gem
   - logstash/logstash-input-relp-0.1.5.gem
+  # https://github.com/otokarev/logstash-output-cassandra
+  - logstash/logstash-output-cassandra-0.1.0.gem
