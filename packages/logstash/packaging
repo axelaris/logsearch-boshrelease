@@ -18,7 +18,7 @@ $BOSH_INSTALL_TARGET/logstash/bin/plugin install \
   $BOSH_COMPILE_TARGET/logstash/logstash-filter-alter-0.1.6.gem \
   $BOSH_COMPILE_TARGET/logstash/logstash-filter-translate-0.1.9.gem \
   $BOSH_COMPILE_TARGET/logstash/logstash-input-relp-0.1.5.gem \
-  $BOSH_COMPILE_TARGET/logstash/logstash-output-cassandra-0.1.0.gem
+  $BOSH_COMPILE_TARGET/logstash/logstash-output-cassandra-0.1.1.gem
 
 $BOSH_INSTALL_TARGET/logstash/bin/plugin list \
   > $BOSH_INSTALL_TARGET/plugins-default.list
