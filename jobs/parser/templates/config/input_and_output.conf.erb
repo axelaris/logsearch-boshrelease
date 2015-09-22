@@ -21,7 +21,7 @@ input {
 }
 
 output {
-  <% if p("logstash_parser.output_override") %>
+  <% if p("logstash_parser.output_override", nil) %>
     <%= p('logstash_parser.output_override')  %>
   <% else %>
 
